@@ -1,0 +1,68 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Permissions' => 
+    array (
+      'b69726ec976528795a5eb6ce9158a376' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"msdiscount_save","description":"msdiscount_save","value":1}',
+        'guid' => 'cb4bbf15a2069e8337c5c0c385296a3e',
+        'native_key' => NULL,
+        'signature' => 'e5fb228a73d154c449c756253308ddc8',
+      ),
+      'f80244f87b88a998bf0d6cc1316d26f8' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"msdiscount_view","description":"msdiscount_view","value":1}',
+        'guid' => 'bcba3ad1f0c00f0b9068ca5273cc48e5',
+        'native_key' => NULL,
+        'signature' => '5986e40526a96a5e91b754127754e0b3',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Permissions' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'template',
+        1 => 'name',
+      ),
+    ),
+  ),
+  'namespace' => 'msdiscount',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'fa88c9bcf78bff63275300100abd0e06',
+  'package' => 'modx',
+  'class' => 'modAccessPolicyTemplate',
+  'signature' => 'f05ee0bea9e633b98f35da019176e8c8',
+  'native_key' => NULL,
+  'object' => '{"id":null,"template_group":1,"name":"msDiscountManagerPolicyTemplate","description":"A policy for msDiscount managers.","lexicon":"msdiscount:permissions","permissions":{"msdiscount_save":[],"msdiscount_view":[]}}',
+);

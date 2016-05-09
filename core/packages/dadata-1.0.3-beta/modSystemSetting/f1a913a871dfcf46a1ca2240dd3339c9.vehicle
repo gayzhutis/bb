@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'dadata',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8cddfd90484251e2e4ea6b021b746c77',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f1a913a871dfcf46a1ca2240dd3339c9',
+  'native_key' => 'dadata_apiToken',
+  'object' => '{"key":"dadata_apiToken","value":"","xtype":"textfield","namespace":"dadata","area":"dadata_main","editedon":null}',
+);

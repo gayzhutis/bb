@@ -1,0 +1,36 @@
+.contests-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.pagetitle {
+    padding: 0 20px;
+    font-weight: 400;
+}
+.block-title-wrap {
+    height: 20px;
+    margin: 20px 0 0;
+    background: url(/assets/templates/img/lines_bg.png);
+}
+.block-title {
+    display: inline-block;
+    height: 20px;
+    margin: 0 25px;
+    padding: 0 5px;
+    font-weight: 400;
+    background: #fff;
+}
+
+.context-content {
+    padding: 15px 0 0;
+}
+.context-title {
+    padding: 0 30px 5px;
+}
+.context-title a {
+    font-weight: 400;
+    font-size: 16px;
+}
+.context-img img {
+    width: 100%;
+}

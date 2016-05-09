@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '045ab0a53c8f2c9a0d82b4b6f311c8ca',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '1d0b57b57a8a68d15c7e79357c1c2ead',
+  'native_key' => 'ms2_payment_liqpay_sandbox',
+  'object' => '{"key":"ms2_payment_liqpay_sandbox","value":1,"xtype":"numberfield","namespace":"minishop2","area":"ms2_payment","editedon":null}',
+);

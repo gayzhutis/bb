@@ -1,0 +1,30 @@
+.content {
+    width: 1017px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.uc-text-row {
+    padding: 0 0 15px;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+.uc-link-container {
+    padding: 10px 0;
+    text-align: center;
+}
+.uc-link {
+    display: inline-block;
+    padding: 15px 20px;
+    background: #02b3d8;
+    font: 30px/30px Impact, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.uc-link:hover {
+    background: #27c0e2;
+}
+.uc-link:active {
+    background: #017d99;
+}

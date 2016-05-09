@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd9087e820724b2f10ada05f1e3ffefdb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'c23c976e6aa89335f646995e001260d6',
+  'native_key' => 'ms2_payment_liqpay_culture',
+  'object' => '{"key":"ms2_payment_liqpay_culture","value":"ru","xtype":"textfield","namespace":"minishop2","area":"ms2_payment","editedon":null}',
+);

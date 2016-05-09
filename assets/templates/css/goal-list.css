@@ -1,0 +1,74 @@
+.content {
+    max-width: 1160px; height: 1%;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+}
+.content:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.sports-list-container {
+    width: 100%;
+    float: left;
+}
+.sports-list-content {
+    min-height: 1px;
+}
+.crumbs-container {
+    padding-left: 20px;
+}
+
+.goals-list-container {
+    /*width: 980px;
+    margin: 0 auto;*/
+}
+.goals-list-pagetitle {
+    padding: 0 0 15px 20px;
+    font: 18px/22px Impact, sans-serif;
+    color: #777;
+}
+.goals-list-content {
+}
+.goal-container {
+    display: inline-block;
+    width: 128px;
+    padding: 0 10px 20px 20px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+}
+.goal-pagetitle-content {
+    padding: 7px 0;
+}
+.goal-pagetitle-content a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    color: #000;
+    text-decoration: none;
+}
+.goal-pagetitle-content a:hover {
+    color: #ee2a26;
+}
+.goal-total-min-price-content {
+    font-weight: 600;
+    line-height: 14px;
+    color: #5a5a5a;
+}
+.goal-total {
+    color: #05aacd;
+}
+.goal-min-price {
+    color: #859500;
+}
+
+.resource-text-content {
+    margin: 0 5px;
+    padding: 20px 30px 25px;
+    border-top: 3px solid #e3e3e3;
+}

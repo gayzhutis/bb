@@ -1,0 +1,37 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => false,
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mspliqpay-1.0.0-beta5\\/msPayment\\/2d17078572350fe4685fc64af80d3159\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/minishop2\\/payment\\/\';","name":"liqpay.php"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mspliqpay-1.0.0-beta5\\/msPayment\\/2d17078572350fe4685fc64af80d3159\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/minishop2\\/custom\\/payment\\/\';","name":"liqpay.class.php"}',
+    ),
+    2 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mspliqpay-1.0.0-beta5\\/msPayment\\/2d17078572350fe4685fc64af80d3159\\/2\\/","target":"return MODX_CORE_PATH . \'components\\/minishop2\\/lexicon\\/ru\\/\';","name":"msp.liqpay.inc.php"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"mspliqpay-1.0.0-beta5\\/msPayment\\/2d17078572350fe4685fc64af80d3159.resolve.settings.resolver","type":"php","name":"resolve.settings"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9bc3b43e4ad9c69b3dbbbc9670127a67',
+  'package' => 'minishop2',
+  'class' => 'msPayment',
+  'signature' => '2d17078572350fe4685fc64af80d3159',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"LiqPay","description":null,"price":"0","logo":null,"rank":0,"active":0,"class":"LiqPay","properties":null}',
+);

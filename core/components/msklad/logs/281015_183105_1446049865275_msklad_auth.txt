@@ -1,0 +1,44 @@
+Array
+(
+    [TMPDIR] => /home/bodybu07/.system/tmp
+    [PHPRC] => /home/bodybu07/.system/php/www.bodybuilding.ua.ini
+    [LC_ALL] => ru_RU.CP1251
+    [PATH] => /sbin:/usr/sbin:/bin:/usr/bin
+    [PWD] => /home/bodybu07/bodybuilding.ua/www
+    [SHLVL] => 0
+    [PHP_FCGI_MAX_REQUESTS] => 10000
+    [SCRIPT_NAME] => /assets/components/msklad/1c_exchange.php
+    [REQUEST_URI] => /assets/components/msklad/1c_exchange.php?type=catalog&mode=checkauth
+    [QUERY_STRING] => type=catalog&amp;mode=checkauth
+    [REQUEST_METHOD] => GET
+    [SERVER_PROTOCOL] => HTTP/1.0
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [REMOTE_PORT] => 36391
+    [SCRIPT_FILENAME] => /home/bodybu07/bodybuilding.ua/www/assets/components/msklad/1c_exchange.php
+    [SERVER_ADMIN] => shvaydakvn@gmail.com
+    [DOCUMENT_ROOT] => /home/bodybu07/bodybuilding.ua/www
+    [REMOTE_ADDR] => 46.98.12.254
+    [SERVER_PORT] => 80
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_NAME] => bodybuilding.ua
+    [SERVER_SOFTWARE] => Apache
+    [SERVER_SIGNATURE] => 
+    [HTTP_ACCEPT] => */*
+    [HTTP_USER_AGENT] => 1C+Enterprise/8.3
+    [HTTP_CONNECTION] => close
+    [HTTP_GEOIP_COUNTRY_CODE] => UA
+    [HTTP_X_REAL_IP] => 46.98.12.254
+    [HTTP_HOST] => bodybuilding.ua
+    [TEMP] => /home/bodybu07/.system/tmp
+    [TMP] => /home/bodybu07/.system/tmp
+    [vhost_id] => 565136
+    [SCRIPT_URI] => http://bodybuilding.ua/assets/components/msklad/1c_exchange.php
+    [SCRIPT_URL] => /assets/components/msklad/1c_exchange.php
+    [DETECTED_CMS] => modx
+    [UNIQUE_ID] => VjD4SVvOyNkAB-YNNBwAAAAF
+    [FCGI_ROLE] => RESPONDER
+    [PHP_SELF] => /assets/components/msklad/1c_exchange.php
+    [REQUEST_TIME_FLOAT] => 1446049865,2063
+    [REQUEST_TIME] => 1446049865
+    [HTTP_REFERER] => 
+)

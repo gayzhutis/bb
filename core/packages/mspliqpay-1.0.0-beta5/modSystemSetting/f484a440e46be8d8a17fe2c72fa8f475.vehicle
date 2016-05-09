@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f278838264ad9e1ce765c4ee2d120542',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f484a440e46be8d8a17fe2c72fa8f475',
+  'native_key' => 'ms2_payment_liqpay_success_id',
+  'object' => '{"key":"ms2_payment_liqpay_success_id","value":0,"xtype":"numberfield","namespace":"minishop2","area":"ms2_payment","editedon":null}',
+);

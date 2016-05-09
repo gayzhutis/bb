@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'minishop2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5c8cff68208f195db9696378f313d62d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f7972ac710072ba4a892f9a948ace9ee',
+  'native_key' => 'ms2_category_content_default',
+  'object' => '{"key":"ms2_category_content_default","value":"[[!pdoPage?\\n\\t&element=`msProducts`\\n]]\\n\\n[[!+page.nav]]","xtype":"textarea","namespace":"minishop2","area":"ms2_category","editedon":null}',
+);

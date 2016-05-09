@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '56be08075dc8f7a0d35c41b2a7b4ed12',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd23bdfa63363de9626f8022dda50ffd3',
+  'native_key' => 'ec_auto_reply_author',
+  'object' => '{"key":"ec_auto_reply_author","value":false,"xtype":"combo-boolean","namespace":"easycomm","area":"ec_main","editedon":null}',
+);

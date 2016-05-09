@@ -1,0 +1,52 @@
+AddDefaultCharset utf-8
+
+ExpiresActive On
+ExpiresDefault A1
+Header append Cache-Control must-revalidate
+
+RewriteEngine On
+RewriteBase /
+
+#brands redirects
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^katalog/(protein|gainer|predtrenirovochnyie-kompleksyi|batonchiki|creatine|bcaa|aminokislotyi|l-karnitin|vitaminyi-i-mineralyi|povyishenie-testosterona|dlya-ulusheniya-sna|dlya-sustavov-i-svyazok|spetsialnyie-dobavki|izotoniki|snijenie-vesa|aksessuaryi)/(4-dimension|7-nutrition|activevites|activlab|actiway-nutrition|allmax-nutrition|api|applied-nutriceuticals|arnold-schwarzenegger|ast-sports|beast|betancourt-n|biotech-(usa)|bodybuilding-com|bodybuilding-ua|bpi-sports|bsn|cellucor|cobra-labs|come-ready|concept-plus|controlled-labs|cutler-nutrition|cytogenix|doctors-best|driven-sports|dymatize-nutrition|eas|efx|epiq|ergogenix|euro-plus|evlution-nutrition|fitmax|fitness-authority|gaspari-nutrition|gat|gear|gear-nutrition|german-american-tech|gnc|good-energy|hydroxycut|hyperstrength|infinite-labs|inner-armour|jym|kevin-levrone|kttape|labrada-nutrition|live-long|megabol|met-rx|mex-nutrition-usa|mgn|mhp|mri|mrm|muscle-pharm|muscle-tech|musclemeds|mutant|natures-bounty|neocell|now|nutrabolics|nutrex|nutriforce|nutvit|olimp-nutrition|optimum-nutrition|ostrovit|primaforce|pro-nutrition|promera-sport|prosupps|protein-factory|purely-inspired|puritans-pride|questbar|real-pharm|redis-nutrition|ronnie-coleman|rsp|rsp-nutrition|s-a-n|scitec-nutrition|scivation|smartshake|street-workout|syntrax|top-secret|top-secret-nutrition|twinlab|ultimate-nutritio|ultimate-nutrition|universal-nutrition|uns|usp-labs|vision-nutrition|vitacost|vitalife|vpx-sports|weider)/?$ /katalog/$1/?ms|manufacturer=$2 [L,QSA,NE,NC]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+RewriteCond %{REQUEST_URI} ^(.*)//(.*)$
+RewriteRule . %1/%2 [R=301,L]
+
+RewriteCond %{REQUEST_URI} !(/$|\.) 
+RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
+
+RewriteCond %{HTTP:Authorization} !^$
+RewriteRule ^(.*)$ $1?http_auth=%{HTTP:Authorization} [QSA]
+
+RewriteCond %{HTTP_HOST} ^www.bodybuilding.ua(.*)
+RewriteRule ^(.*)$ http://bodybuilding.ua/$1 [R=301,L]
+
+# redirect all requests to /de/favicon.ico and /nl/favicon.ico
+# to /favicon.ico
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(ru|en|ua)/favicon.ico$ favicon.ico [L,QSA]
+   
+# redirect all requests to /de/assets* and /nl/assets* to /assets*
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(ru|en|ua)/assets(.*)$ assets$2 [L,QSA]
+
+# redirect all requests to /de/assets* and /nl/assets* to /assets*
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(ru|en|ua)/user_files(.*)$ user_files$2 [L,QSA]
+
+# The Friendly URLs part
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(ru|en|ua)?/?(.*)$ $1/index.php?cultureKey=$1&q=$2 [L,QSA]
+
+RewriteCond %{REQUEST_URI} !(/$|\.) 
+RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]

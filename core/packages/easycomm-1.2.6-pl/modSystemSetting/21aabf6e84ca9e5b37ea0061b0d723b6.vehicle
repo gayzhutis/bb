@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b1bcc3323556e0b7e867e2b537d466db',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '21aabf6e84ca9e5b37ea0061b0d723b6',
+  'native_key' => 'ec_message_grid_fields',
+  'object' => '{"key":"ec_message_grid_fields","value":"id,resource_pagetitle,thread_name,subject,date,user_name,user_email,user_contacts,rating,text,reply_author,reply_text,ip","xtype":"textfield","namespace":"easycomm","area":"ec_main","editedon":null}',
+);

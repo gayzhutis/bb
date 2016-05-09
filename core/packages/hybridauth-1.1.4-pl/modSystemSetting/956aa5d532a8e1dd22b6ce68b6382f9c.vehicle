@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'hybridauth',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '94879ae03a61286bf8f16cbfa59527d1',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '956aa5d532a8e1dd22b6ce68b6382f9c',
+  'native_key' => 'ha.keys.Yandex',
+  'object' => '{"key":"ha.keys.Yandex","value":"{\\"id\\":\\"12345\\",\\"secret\\":\\"12345\\"}","xtype":"textfield","namespace":"hybridauth","area":"ha.keys","editedon":null}',
+);

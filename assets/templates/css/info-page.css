@@ -1,0 +1,62 @@
+.simple-page {
+    display: block;
+    margin: 0 auto;
+    width: 987px;
+}
+.simple-page-title {
+    color: #434343;
+    font-size: 18px;
+    margin: 30px 0;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.simple-page-title.little {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.loginFPForm {
+    display: block;
+    width: 100%;
+}
+.login-forgot-email {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #a3a3a3;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #dadada inset;
+    display: block;
+    margin: 0 auto;
+    line-height: 25px;
+    padding: 0 10px;
+    width: 430px;
+    text-align: center;
+}
+.loginFPForm #forgot-pass-but {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.login-forgot-email:focus {
+    border-color: #848484;
+}
+.loginFPErrors {
+    color: #7a7a7a;
+    font-family: Tahoma,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.loginFPErrors p {
+    display: inline-block;
+    margin: 0;
+}
+.loginFPErrors .attention-errors {
+    color: #ff140c;
+}
+.simple-page-title .blue {
+    color: #05aacd;
+}

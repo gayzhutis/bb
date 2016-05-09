@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'msklad',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8b9ab0c63bd578105cfed9fdddbd94dc',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'aa3ef233834beb0fbe60a97184e3c6f2',
+  'native_key' => 'msklad_catalog_currency',
+  'object' => '{"key":"msklad_catalog_currency","value":"\\\\u0440\\\\u0443\\\\u0431","xtype":"textfield","namespace":"msklad","area":"msklad_1c","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0f7fc52952b64abd6352b2588566c991',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '127d50bb60b35896c77cda8c0098082f',
+  'native_key' => 'ec_show_resources',
+  'object' => '{"key":"ec_show_resources","value":"*","xtype":"textfield","namespace":"easycomm","area":"ec_main","editedon":null}',
+);

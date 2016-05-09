@@ -1,0 +1,54 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      'a39e8fe2a4dc1bdd14be728b33ea71ce' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"dadata.form","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/** @var array $scriptProperties *\\/\\n\\/** @var dadata $dadata *\\/\\nif (!$dadata = $modx->getService(\'dadata\', \'dadata\', $modx->getOption(\'dadata_core_path\', null, $modx->getOption(\'core_path\') . \'components\\/dadata\\/\') . \'model\\/dadata\\/\', $scriptProperties)) {\\n\\treturn \'Could not load dadata class!\';\\n}\\n\\n\\/* clear $scriptProperties *\\/\\nforeach (array(\'suggestions\') as $k) {\\n\\t$scriptProperties[$k] = $dadata->fromJson($scriptProperties[$k]);\\n}\\n\\n$context = $scriptProperties[\'context\'] = $modx->getOption(\'context\', $scriptProperties, $modx->context->key, true);\\n$selector = $scriptProperties[\'selector\'] = $modx->getOption(\'selector\', $scriptProperties, \'#dadata-form\', true);\\n$suggestions = $scriptProperties[\'suggestions\'] = $modx->getOption(\'suggestions\', $scriptProperties, \'{}\', true);\\n$apiMode = $scriptProperties[\'apiMode\'] = $modx->getOption(\'apiMode\', $scriptProperties, 0, true);\\n$apiToken = $scriptProperties[\'apiToken\'] = $modx->getOption(\'apiToken\', $scriptProperties, 0, true);\\n$apiSecret = $scriptProperties[\'apiSecret\'] = $modx->getOption(\'apiSecret\', $scriptProperties, 0, true);\\n$objectName = $scriptProperties[\'objectName\'] = $modx->getOption(\'objectName\', $scriptProperties, \'modxDaData\', true);\\n$configName = $scriptProperties[\'configName\'] = $modx->getOption(\'configName\', $scriptProperties, \'dadata\', true);\\n$showLog = $scriptProperties[\'showLog\'] = $modx->getOption(\'showLog\', $scriptProperties, false, true);\\n$cacheResponse = $scriptProperties[\'cacheResponse\'] = $modx->getOption(\'cacheResponse\', $scriptProperties, true, true);\\n$snippetName = $scriptProperties[\'snippetName\'] = $modx->getOption(\'snippetName\', $scriptProperties, $this->get(\'name\'), true);\\n\\n$propkey = array();\\nforeach ($scriptProperties as $k => $v) {\\n\\tif (!in_array($k, array(\'id\', \'user_id\'))) {\\n\\t\\t$propkey[$k] = $v;\\n\\t}\\n}\\n$propkey = $scriptProperties[\'propkey\'] = $modx->getOption(\'propkey\', $scriptProperties, sha1(serialize($propkey)), true);\\n\\n$dadata->initialize($context, $scriptProperties);\\n$dadata->saveProperties($scriptProperties);\\n$dadata->loadCustomJsCss($objectName, $configName);\\n\\n$opts = $modx->toJSON(array(\\n\\t\'idx\' => \\"{$configName}.opts.idx{$propkey}\\",\\n\\t\'propkey\' => $propkey,\\n\\t\'selector\' => $selector,\\n\\t\'suggestions\' => $suggestions\\n));\\n\\n$modx->regClientScript(\\"<script type=\\\\\\"text\\/javascript\\\\\\">{$configName}.opts.idx{$propkey}={$opts};<\\/script>\\", true);\\n\\nreturn \'\';","locked":0,"properties":"a:9:{s:8:\\"selector\\";a:7:{s:4:\\"name\\";s:8:\\"selector\\";s:4:\\"desc\\";s:20:\\"dadata_prop_selector\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:12:\\"#dadata-form\\";s:7:\\"lexicon\\";s:17:\\"dadata:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:11:\\"suggestions\\";a:7:{s:4:\\"name\\";s:11:\\"suggestions\\";s:4:\\"desc\\";s:23:\\"dadata_prop_suggestions\\";s:4:\\"type\\";s:8:\\"textarea\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"dadata:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"apiMode\\";a:7:{s:4:\\"name\\";s:7:\\"apiMode\\";s:4:\\"desc\\";s:19:\\"dadata_prop_apiMode\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:4:\\"free\\";s:5:\\"value\\";i:0;}i:1;a:2:{s:4:\\"text\\";s:3:\\"pay\\";s:5:\\"value\\";i:1;}}s:5:\\"value\\";i:0;s:7:\\"lexicon\\";s:17:\\"dadata:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"apiToken\\";a:7:{s:4:\\"name\\";s:8:\\"apiToken\\";s:4:\\"desc\\";s:20:\\"dadata_prop_apiToken\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"dadata:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:9:\\"apiSecret\\";a:7:{s:4:\\"name\\";s:9:\\"apiSecret\\";s:4:\\"desc\\";s:21:\\"dadata_prop_apiSecret\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"dadata:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"objectName\\";a:7:{s:4:\\"name\\";s:10:\\"objectName\\";s:4:\\"desc\\";s:22:\\"dadata_prop_objectName\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:10:\\"modxDaData\\";s:7:\\"lexicon\\";s:17:\\"dadata:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"jqueryJs\\";a:7:{s:4:\\"name\\";s:8:\\"jqueryJs\\";s:4:\\"desc\\";s:20:\\"dadata_prop_jqueryJs\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:41:\\"[[+assetsUrl]]vendor\\/jquery\\/jquery.min.js\\";s:7:\\"lexicon\\";s:17:\\"dadata:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:11:\\"frontendCss\\";a:7:{s:4:\\"name\\";s:11:\\"frontendCss\\";s:4:\\"desc\\";s:23:\\"dadata_prop_frontendCss\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:33:\\"[[+assetsUrl]]css\\/web\\/default.css\\";s:7:\\"lexicon\\";s:17:\\"dadata:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"frontendJs\\";a:7:{s:4:\\"name\\";s:10:\\"frontendJs\\";s:4:\\"desc\\";s:22:\\"dadata_prop_frontendJs\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:31:\\"[[+assetsUrl]]js\\/web\\/default.js\\";s:7:\\"lexicon\\";s:17:\\"dadata:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/dadata\\/elements\\/snippets\\/snippet.form.php","content":"\\/** @var array $scriptProperties *\\/\\n\\/** @var dadata $dadata *\\/\\nif (!$dadata = $modx->getService(\'dadata\', \'dadata\', $modx->getOption(\'dadata_core_path\', null, $modx->getOption(\'core_path\') . \'components\\/dadata\\/\') . \'model\\/dadata\\/\', $scriptProperties)) {\\n\\treturn \'Could not load dadata class!\';\\n}\\n\\n\\/* clear $scriptProperties *\\/\\nforeach (array(\'suggestions\') as $k) {\\n\\t$scriptProperties[$k] = $dadata->fromJson($scriptProperties[$k]);\\n}\\n\\n$context = $scriptProperties[\'context\'] = $modx->getOption(\'context\', $scriptProperties, $modx->context->key, true);\\n$selector = $scriptProperties[\'selector\'] = $modx->getOption(\'selector\', $scriptProperties, \'#dadata-form\', true);\\n$suggestions = $scriptProperties[\'suggestions\'] = $modx->getOption(\'suggestions\', $scriptProperties, \'{}\', true);\\n$apiMode = $scriptProperties[\'apiMode\'] = $modx->getOption(\'apiMode\', $scriptProperties, 0, true);\\n$apiToken = $scriptProperties[\'apiToken\'] = $modx->getOption(\'apiToken\', $scriptProperties, 0, true);\\n$apiSecret = $scriptProperties[\'apiSecret\'] = $modx->getOption(\'apiSecret\', $scriptProperties, 0, true);\\n$objectName = $scriptProperties[\'objectName\'] = $modx->getOption(\'objectName\', $scriptProperties, \'modxDaData\', true);\\n$configName = $scriptProperties[\'configName\'] = $modx->getOption(\'configName\', $scriptProperties, \'dadata\', true);\\n$showLog = $scriptProperties[\'showLog\'] = $modx->getOption(\'showLog\', $scriptProperties, false, true);\\n$cacheResponse = $scriptProperties[\'cacheResponse\'] = $modx->getOption(\'cacheResponse\', $scriptProperties, true, true);\\n$snippetName = $scriptProperties[\'snippetName\'] = $modx->getOption(\'snippetName\', $scriptProperties, $this->get(\'name\'), true);\\n\\n$propkey = array();\\nforeach ($scriptProperties as $k => $v) {\\n\\tif (!in_array($k, array(\'id\', \'user_id\'))) {\\n\\t\\t$propkey[$k] = $v;\\n\\t}\\n}\\n$propkey = $scriptProperties[\'propkey\'] = $modx->getOption(\'propkey\', $scriptProperties, sha1(serialize($propkey)), true);\\n\\n$dadata->initialize($context, $scriptProperties);\\n$dadata->saveProperties($scriptProperties);\\n$dadata->loadCustomJsCss($objectName, $configName);\\n\\n$opts = $modx->toJSON(array(\\n\\t\'idx\' => \\"{$configName}.opts.idx{$propkey}\\",\\n\\t\'propkey\' => $propkey,\\n\\t\'selector\' => $selector,\\n\\t\'suggestions\' => $suggestions\\n));\\n\\n$modx->regClientScript(\\"<script type=\\\\\\"text\\/javascript\\\\\\">{$configName}.opts.idx{$propkey}={$opts};<\\/script>\\", true);\\n\\nreturn \'\';"}',
+        'guid' => '775ca8fb3520f2fc27cb3db96846e165',
+        'native_key' => 0,
+        'signature' => '20774e87f2e2254fc19f3340f4534e04',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'dadata',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"dadata-1.0.3-beta\\/modCategory\\/c6ac73e317a6edbece19401eadc3db6a\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"dadata"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"dadata-1.0.3-beta\\/modCategory\\/c6ac73e317a6edbece19401eadc3db6a\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"dadata"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd7e0a9a460b9d9ebff18ec68acf8c42b',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'c6ac73e317a6edbece19401eadc3db6a',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"DaData","rank":0}',
+);

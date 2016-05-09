@@ -1,0 +1,200 @@
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxLoadedContent.zoom {cursor: url(/assets/templates/img/zoom_cursor.gif), move;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:100%; max-height: 100%; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#fff; opacity: 0.9; filter: alpha(opacity = 90);}
+#colorbox{outline:0;}
+    #cboxTopLeft{width:25px; height:25px; /*background:url(images/border1.png) no-repeat 0 0;*/}
+    #cboxTopCenter{height:25px; /*background:url(images/border1.png) repeat-x 0 -50px;*/}
+    #cboxTopRight{width:25px; height:25px; /*background:url(images/border1.png) no-repeat -25px 0;*/}
+    #cboxBottomLeft{width:25px; height:25px; /*background:url(images/border1.png) no-repeat 0 -25px;*/}
+    #cboxBottomCenter{height:25px; /*background:url(images/border1.png) repeat-x 0 -75px;*/}
+    #cboxBottomRight{width:25px; height:25px; /*background:url(images/border1.png) no-repeat -25px -25px;*/}
+    #cboxMiddleLeft{width:25px; /*background:url(images/border2.png) repeat-y 0 0;*/}
+    #cboxMiddleRight{width:25px; /*background:url(images/border2.png) repeat-y -25px 0;*/}
+    #cboxContent{background:#fff; overflow:hidden; -webkit-box-shadow: 0 0 0 3px #d2d2d2; box-shadow: 0 0 0 3px #d2d2d2; padding: 120px 350px 10px 100px;}
+    .gall-one-img #cboxContent {padding: 120px 20px 10px;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:20px;}
+        #cboxTitle{
+            padding-right: 334px;
+            position: absolute;
+            top: 10px; left: 30px; right: 50px;
+        }
+        .gal-prod-title {
+            font: bold 26px/32px Calibri, Tahoma, sans-serif;
+            color: #000;
+        }
+        .gal-prod-buy {
+            width: 375px;
+            padding: 50px 0 0;
+            position: absolute;
+            top: 0; right: 0;
+        }
+        .gal-prod-buy .buy-btn,
+        .gal-prod-buy .not-available-btn {
+            margin-right: 3px;
+            float: right;
+        }
+        .gal-prod-buy .form-group {
+            padding-top: 0;
+        }
+        .gal-prod-buy .taste-form-group .control-label {
+            line-height: 36px;
+        }
+        .gal-prod-buy .tastes-container {
+            top: 0; left: 0; right: 0;
+        }
+        .gal-prod-buy .taste-form-group .form-control {
+            width: 225px; height: 36px;
+            padding-left: 7px;
+            padding-right: 15px;
+            border-radius: 10px;
+            border-color: #000;
+        }
+        .gal-prod-price {
+            position: absolute;
+            top: 45px; right: 143px;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 50px;
+            color: #859400;
+        }
+        .gal-prod-price span {
+            font-size: 27px;
+            font-weight: 200;
+            color: #8b8b8b;
+        }
+        .gal-prod-thumbs-container {
+            position: absolute !important;
+            top: 150px; right: 55px; bottom: 50px;
+            overflow: hidden;
+            overflow-y: auto;
+            padding-right: 20px;
+        }
+        .gal-prod-thumbs {      
+            width: 141px;
+            overflow: visible;
+            box-sizing: border-box;
+        }
+        .gal-prod-thumb {
+            margin: 10px 0 0;
+            box-sizing:border-box;
+        }
+        .gal-prod-thumb:first-child {
+            margin: 0;
+        }
+        .gal-prod-thumb a {
+            display: block;
+            padding: 5px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+    
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+        }
+        .gal-prod-thumb.current a {
+            border-color: #00a9ca;
+        }
+        .gal-prod-thumb img {
+            height: 100px;
+        }
+        #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999; text-indent: -9999px;}
+        /*#cboxLoadingOverlay{background:#fff url(images/loading.gif) no-repeat 5px 5px;}*/
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
+        #cboxPrevious, #cboxNext {
+            display: block;
+            width: 76px; height: 76px;
+            margin-top: -38px;
+            position: absolute;
+            top: 50%;
+            text-indent: -9999px;
+            border-radius: 38px;
+            outline: none;
+        }
+        #cboxPrevious:hover, #cboxNext:hover {
+            background-color: #f1f1f1;
+        }
+        #cboxPrevious:active, #cboxNext:active {
+            background-color: #41b5e5;
+        }
+        #cboxPrevious {
+            left: 15px;
+        }
+        #cboxNext {
+            right: 265px;
+        }
+        #cboxPrevious:before, #cboxNext:before {
+            content: "";
+            width: 30px; height: 52px;
+            position: absolute;
+            top: 12px;
+            background-image: url(/assets/templates/img/sprite.png);
+        }
+        #cboxPrevious:before {
+            left: 19px;
+            background-position: -194px -45px;
+        }
+        #cboxNext:before {
+            right: 19px;
+            background-position: -225px -45px;
+        }
+        #cboxPrevious:active:before {
+            background-position: -140px -83px;
+        }
+        #cboxNext:active:before {
+            background-position: -140px -135px;
+        }
+        #cboxClose {
+            display:block;
+            width: 27px; height: 26px;
+            position:absolute;
+            top: 10px; right: 10px;
+            text-indent: -9999px;
+            background: url(/assets/templates/img/sprite.png) -167px -51px;
+            outline: none;
+        }
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}

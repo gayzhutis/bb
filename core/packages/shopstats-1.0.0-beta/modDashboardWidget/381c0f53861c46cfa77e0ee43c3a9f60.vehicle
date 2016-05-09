@@ -1,0 +1,19 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'namespace' => 'shopstats',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd484fbefe3d9c4fe16027bfec8ab1cb8',
+  'package' => 'modx',
+  'class' => 'modDashboardWidget',
+  'signature' => '381c0f53861c46cfa77e0ee43c3a9f60',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"shopstats","description":"Statistics online store dashboard widget","type":"file","content":"[[++core_path]]components\\/shopstats\\/elements\\/widget\\/shopstats.widget.php","namespace":"shopstats","lexicon":"shopstats:default","size":"double","name_trans":"shopStats","description_trans":"Statistics online store dashboard widget"}',
+);

@@ -1,0 +1,112 @@
+.content-wrap {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.contacts-title {
+    width: 240px;
+    margin: 0 0 15px;
+    padding: 0 0 7px;
+    border-bottom: 5px solid #ffc000;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #434343;
+}
+
+.contacts-info-form-container {
+    width: 920px; height: 1%;
+    padding: 25px 30px;
+    position: relative;
+}
+.contacts-info-form-container:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.contacts-info-container {
+    width: 100%;
+    float: left;
+}
+.contacts-info-content {
+    min-height: 1px;
+    padding: 0 400px 0 0;
+}
+.contacts-info-row {
+    min-height: 20px;
+    padding: 0 0 7px 130px;
+    position: relative;
+}
+.contacts-info-row-title {
+    width: 120px;
+    position: absolute;
+    left: 0;
+    color: #858585;
+}
+.contacts-info-row-content {
+    font-size: 14px;
+    color: #424242;
+}
+.contacts-info-phone-description {
+    padding-bottom: 5px;
+}
+.contacts-info-row-content .contacts-info-phone-description:last-child {
+    padding-bottom: 0;
+}
+.contacts-info-description {
+    padding-left: 5px;
+}
+
+.contacts-form-container {
+    width: 365px;
+    margin: 0 0 0 -365px;
+    float: left;
+}
+.question-form {
+    position: relative;
+}
+.question-form-row {
+    padding: 0 0 3px 0;
+}
+.question-form-row label {
+    display: inline-block;
+    padding: 0 0 3px 0;
+    font-size: 14px;
+    color: #424242;
+}
+.inputArea {
+    width: 355px; height: 19px;
+    padding: 3px 4px;
+    border: 1px solid #e1e1e1;
+}
+.textArea {
+    width: 355px; height: 69px;
+    padding: 3px 4px;
+    border: 1px solid #e1e1e1;
+    resize: none;
+}
+.send-btn {
+    padding: 7px 12px 9px;
+    float: right;
+    border: none;
+    background: #05acce;
+    font: 15px/16px Impact, sans-serif;
+    color: #fafafa;
+    cursor: pointer;
+    outline: none;
+}
+.send-btn:hover {
+    background: #27c0e2;
+}
+.send-btn:active {
+    background: #017d99;
+}
+
+.map-container {
+    padding: 0 30px 30px;
+}
+#map-canvas {
+    width: 100%; height: 380px;
+}

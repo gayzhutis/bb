@@ -1,0 +1,125 @@
+.wrapper:before {
+    max-width: 1160px;
+}
+.content {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.content:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.crumbs-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-bottom: 12px;
+}
+
+/* Alphabet */
+.alphabet-container {
+    margin: 0 0 3px;
+    text-align: center;
+    background: #f2f2f2;
+}
+.letter-container {
+    display: inline-block;
+    width: 32px; height: 35px;
+}
+.letter-content {
+    display: block;
+    width: 30px; height: 35px;
+    position: relative;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    font-size: 18px;
+    line-height: 35px;
+    color: #cbcbcb;
+    background: #ececec;
+}
+.letter-link {
+    text-decoration: none;
+    color: #434343;
+}
+.letter-link.active,
+.letter-link:hover {
+    background: #00a8cc;
+}
+.letter-link.active {
+    color: #fff;
+}
+
+/* Brands list */
+.block-letters-brands-container {
+    padding: 0 0 20px;
+}
+.block-letter-brands-content {
+    position: relative;
+}
+.block-letter-brands-content.hide {
+    opacity: 0.4;
+}
+.letter-anchor {
+    position: absolute;
+    top: -80px;
+}
+.block-letter-container {
+    padding: 5px 0;
+    background: #d7d7d7;
+}
+.block-letter-content {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #434343;
+}
+.brands-content {
+    max-width: 1580px;
+    margin: 0 auto;
+    padding: 10px 0 0;
+    text-align: justify;
+}
+.brand-content {
+    padding: 0 20px 25px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.brand-content-link {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+.brand-content-link:hover {
+    text-decoration: underline;
+}
+.brand-content-link-image,
+.brand-content-link-image img {
+    max-width: 100%;
+}
+.brand-content-link-text {
+    padding-top: 3px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.resource-text-content {
+    margin: 0 5px;
+    padding: 20px 30px 25px;
+    border-top: 3px solid #e3e3e3;
+}
+
+
+.side-left {
+    width: 195px;
+    margin: 0 0 0 -100%;
+    padding: 0 0 30px;
+    float: left;
+    border-right: 4px solid #e3e3e3;
+}

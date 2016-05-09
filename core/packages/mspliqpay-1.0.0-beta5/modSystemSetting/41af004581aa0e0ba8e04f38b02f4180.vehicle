@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f41fec31f244a003358da4c49ba083b9',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '41af004581aa0e0ba8e04f38b02f4180',
+  'native_key' => 'ms2_payment_liqpay_currency',
+  'object' => '{"key":"ms2_payment_liqpay_currency","value":"USD","xtype":"textfield","namespace":"minishop2","area":"ms2_payment","editedon":null}',
+);

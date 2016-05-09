@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'msklad',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b99ed1067919dbdbc2e02af0db4ef28e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '33b25785be4a2bbe3f9bae5e8adc9d5f',
+  'native_key' => 'msklad_1c_sync_login',
+  'object' => '{"key":"msklad_1c_sync_login","value":"mSync","xtype":"textfield","namespace":"msklad","area":"msklad_1c","editedon":null}',
+);

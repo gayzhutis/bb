@@ -1,0 +1,96 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '66ca28eac7dff111bc507244952328da' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.Relations.item","description":"Chunk for Items.","editor_type":0,"category":0,"cache_type":0,"snippet":"<li><strong>[[+name]]<\\/strong> - [[+description]]<\\/li>","locked":0,"properties":null,"static":0,"static_file":"","content":"<li><strong>[[+name]]<\\/strong> - [[+description]]<\\/li>"}',
+        'guid' => '5ad75158f0f6fb2283535abf5db0fbf8',
+        'native_key' => 0,
+        'signature' => '52684366825bbb374948b4380f83e18a',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'ce6cfd6aebceaa004b04ccfc95f2a2a1' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"Relations","description":"Displays Items.","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * The base Relations snippet.\\n *\\n * @package relations\\n *\\/\\n$Relations = $modx->getService(\'relations\',\'Relations\',$modx->getOption(\'relations.core_path\',null,$modx->getOption(\'core_path\').\'components\\/relations\\/\').\'model\\/relations\\/\',$scriptProperties);\\nif (!($Relations instanceof Relations)) return \'\';\\n\\n\\/**\\n * Do your snippet code here. This demo grabs 5 items from our custom table.\\n *\\/\\n$tpl = $modx->getOption(\'tpl\',$scriptProperties,\'Item\');\\n$sortBy = $modx->getOption(\'sortBy\',$scriptProperties,\'name\');\\n$sortDir = $modx->getOption(\'sortDir\',$scriptProperties,\'ASC\');\\n$limit = $modx->getOption(\'limit\',$scriptProperties,5);\\n$outputSeparator = $modx->getOption(\'outputSeparator\',$scriptProperties,\\"\\\\n\\");\\n\\n\\/* build query *\\/\\n$c = $modx->newQuery(\'RelationsItem\');\\n$c->sortby($sortBy,$sortDir);\\n$c->limit($limit);\\n$items = $modx->getCollection(\'RelationsItem\',$c);\\n\\n\\/* iterate through items *\\/\\n$list = array();\\nforeach ($items as $item) {\\n\\t$itemArray = $item->toArray();\\n\\t$list[] = $Relations->getChunk($tpl,$itemArray);\\n}\\n\\n\\/* output *\\/\\n$output = implode($outputSeparator,$list);\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\',$scriptProperties,false);\\nif (!empty($toPlaceholder)) {\\n\\t\\/* if using a placeholder, output nothing and set output to specified placeholder *\\/\\n\\t$modx->setPlaceholder($toPlaceholder,$output);\\n\\treturn \'\';\\n}\\n\\/* by default just return output *\\/\\nreturn $output;","locked":0,"properties":"a:6:{s:3:\\"tpl\\";a:7:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:23:\\"prop_relations.tpl_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:18:\\"tpl.Relations.item\\";s:7:\\"lexicon\\";s:20:\\"relations:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"sortBy\\";a:7:{s:4:\\"name\\";s:6:\\"sortBy\\";s:4:\\"desc\\";s:26:\\"prop_relations.sortby_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:4:\\"name\\";s:7:\\"lexicon\\";s:20:\\"relations:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"sortDir\\";a:7:{s:4:\\"name\\";s:7:\\"sortDir\\";s:4:\\"desc\\";s:27:\\"prop_relations.sortdir_desc\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:3:\\"ASC\\";s:5:\\"value\\";s:3:\\"ASC\\";}i:1;a:2:{s:4:\\"text\\";s:4:\\"DESC\\";s:5:\\"value\\";s:4:\\"DESC\\";}}s:5:\\"value\\";s:3:\\"ASC\\";s:7:\\"lexicon\\";s:20:\\"relations:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"limit\\";a:7:{s:4:\\"name\\";s:5:\\"limit\\";s:4:\\"desc\\";s:25:\\"prop_relations.limit_desc\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";i:5;s:7:\\"lexicon\\";s:20:\\"relations:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:15:\\"outputSeparator\\";a:7:{s:4:\\"name\\";s:15:\\"outputSeparator\\";s:4:\\"desc\\";s:35:\\"prop_relations.outputseparator_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:20:\\"relations:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:13:\\"toPlaceholder\\";a:7:{s:4:\\"name\\";s:13:\\"toPlaceholder\\";s:4:\\"desc\\";s:33:\\"prop_relations.toplaceholder_desc\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:20:\\"relations:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * The base Relations snippet.\\n *\\n * @package relations\\n *\\/\\n$Relations = $modx->getService(\'relations\',\'Relations\',$modx->getOption(\'relations.core_path\',null,$modx->getOption(\'core_path\').\'components\\/relations\\/\').\'model\\/relations\\/\',$scriptProperties);\\nif (!($Relations instanceof Relations)) return \'\';\\n\\n\\/**\\n * Do your snippet code here. This demo grabs 5 items from our custom table.\\n *\\/\\n$tpl = $modx->getOption(\'tpl\',$scriptProperties,\'Item\');\\n$sortBy = $modx->getOption(\'sortBy\',$scriptProperties,\'name\');\\n$sortDir = $modx->getOption(\'sortDir\',$scriptProperties,\'ASC\');\\n$limit = $modx->getOption(\'limit\',$scriptProperties,5);\\n$outputSeparator = $modx->getOption(\'outputSeparator\',$scriptProperties,\\"\\\\n\\");\\n\\n\\/* build query *\\/\\n$c = $modx->newQuery(\'RelationsItem\');\\n$c->sortby($sortBy,$sortDir);\\n$c->limit($limit);\\n$items = $modx->getCollection(\'RelationsItem\',$c);\\n\\n\\/* iterate through items *\\/\\n$list = array();\\nforeach ($items as $item) {\\n\\t$itemArray = $item->toArray();\\n\\t$list[] = $Relations->getChunk($tpl,$itemArray);\\n}\\n\\n\\/* output *\\/\\n$output = implode($outputSeparator,$list);\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\',$scriptProperties,false);\\nif (!empty($toPlaceholder)) {\\n\\t\\/* if using a placeholder, output nothing and set output to specified placeholder *\\/\\n\\t$modx->setPlaceholder($toPlaceholder,$output);\\n\\treturn \'\';\\n}\\n\\/* by default just return output *\\/\\nreturn $output;"}',
+        'guid' => 'e5f3589a54a5c838114719a96a265cec',
+        'native_key' => 0,
+        'signature' => '8c8265b2e1945c7f8b5456b15eedda5a',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'category',
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'Snippets' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+        'Chunks' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => false,
+          'unique_key' => 'name',
+        ),
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'relations',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"relations-1.0.0-rc1\\/modCategory\\/6ebdd87c01fe012e98080eb732a3c82e\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"relations"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"relations-1.0.0-rc1\\/modCategory\\/6ebdd87c01fe012e98080eb732a3c82e\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"relations"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0dd7e32be8bc92dc3683c8f31f08e220',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '6ebdd87c01fe012e98080eb732a3c82e',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"Relations"}',
+);

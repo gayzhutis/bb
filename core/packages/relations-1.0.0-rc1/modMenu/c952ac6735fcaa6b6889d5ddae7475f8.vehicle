@@ -1,0 +1,62 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      'a550787fa218fc74f875c5002b80a5f2' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":1,"namespace":"relations","controller":"index","haslayout":1,"lang_topics":"relations:default","assets":"","help_url":"","parent":0}',
+        'guid' => '97681722693639af49ea5f39cc3269cb',
+        'native_key' => 1,
+        'signature' => '7845455d12a455647263430338749708',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'relations',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"relations-1.0.0-rc1\\/modMenu\\/c952ac6735fcaa6b6889d5ddae7475f8.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"relations-1.0.0-rc1\\/modMenu\\/c952ac6735fcaa6b6889d5ddae7475f8.resolve.paths.resolver","type":"php","name":"resolve.paths"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9e4d79272b7976bd74bf87f70b807c7d',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => 'c952ac6735fcaa6b6889d5ddae7475f8',
+  'native_key' => 'relations',
+  'object' => '{"text":"relations","parent":"components","action":1,"description":"relations.menu_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":""}',
+);

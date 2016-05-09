@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '066b6b4b7522c429c8b12382d987f49a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0966d8efd87d3c9ea55f44f70ada0ebc',
+  'native_key' => 'ec_mail_notify_manager',
+  'object' => '{"key":"ec_mail_notify_manager","value":true,"xtype":"combo-boolean","namespace":"easycomm","area":"ec_mail","editedon":null}',
+);

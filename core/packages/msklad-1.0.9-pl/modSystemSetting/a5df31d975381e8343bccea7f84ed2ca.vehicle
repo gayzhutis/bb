@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'msklad',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9dfcddbd32f2306e0e022af39c0bc0a0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a5df31d975381e8343bccea7f84ed2ca',
+  'native_key' => 'msklad_create_properties_tv',
+  'object' => '{"key":"msklad_create_properties_tv","value":false,"xtype":"combo-boolean","namespace":"msklad","area":"msklad_1c","editedon":null}',
+);

@@ -1,0 +1,99 @@
+.content {
+    position: relative;
+    background: #fff;
+}
+.content:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.crumbs-container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-bottom: 12px;
+}
+
+
+/* Alphabet */
+.alphabet-container {
+    margin: 0 0 3px;
+    text-align: center;
+    background: #ececec;
+}
+.letter-container {
+    display: inline-block;
+    width: 32px; height: 35px;
+}
+.letter-content {
+    display: block;
+    width: 30px; height: 35px;
+    position: relative;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    font-size: 18px;
+    line-height: 35px;
+    color: #cbcbcb;
+    background: #ececec;
+}
+.letter-link {
+    text-decoration: none;
+    color: #434343;
+}
+.letter-link.active,
+.letter-link:hover {
+    background: #00a8cc;
+}
+.letter-link.active {
+    color: #fff;
+}
+
+/* Brands list */
+.block-letters-ingredients-container {
+    max-width: 1325px;
+    margin: 0 auto;
+    padding: 15px 10px 0;
+}
+.block-letter-ingredients-content {
+    display: inline-block;
+    width: 155px;
+    padding: 20px 10px 20px 0;
+    vertical-align: top;
+    position: relative;
+}
+.block-letter-ingredients-content.hide {
+    opacity: 0.4;
+}
+.letter-anchor {
+    position: absolute;
+    top: -80px;
+}
+.block-letter-content {
+    font-weight: 600;
+    font-size: 18px;
+    color: #434343;
+}
+.ingredients-content {
+    padding: 10px 0 0 0;
+}
+.ingredient-content {
+    display: block;
+}
+.ingredient-content-link {
+    font-weight: 500;
+    line-height: 14px;
+    color: #008ba9;
+    text-decoration: none;
+}
+.ingredient-content-link:hover {
+    color: #ff4436;
+}
+
+.resource-text-content {
+    margin: 0 5px;
+    padding: 20px 30px 25px;
+    border-top: 3px solid #e3e3e3;
+}

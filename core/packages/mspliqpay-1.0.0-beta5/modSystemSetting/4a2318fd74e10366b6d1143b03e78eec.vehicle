@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1651264bd8c3dac2fed798851804f06f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4a2318fd74e10366b6d1143b03e78eec',
+  'native_key' => 'ms2_payment_liqpay_url',
+  'object' => '{"key":"ms2_payment_liqpay_url","value":"https:\\/\\/www.liqpay.com\\/api\\/pay","xtype":"textfield","namespace":"minishop2","area":"ms2_payment","editedon":null}',
+);

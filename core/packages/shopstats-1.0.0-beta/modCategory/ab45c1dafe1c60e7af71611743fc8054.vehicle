@@ -1,0 +1,29 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'namespace' => 'shopstats',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"shopstats-1.0.0-beta\\/modCategory\\/ab45c1dafe1c60e7af71611743fc8054\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"shopstats"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"shopstats-1.0.0-beta\\/modCategory\\/ab45c1dafe1c60e7af71611743fc8054\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"shopstats"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '68efaf799e1a61b2444b9e50b8c85be9',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'ab45c1dafe1c60e7af71611743fc8054',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"shopStats"}',
+);
