@@ -44,37 +44,6 @@ miniShop2.combo.Yes_no = function(config) {
 Ext.extend(miniShop2.combo.Yes_no,MODx.combo.ComboBox);
 Ext.reg('minishop2-combo-yes-no',miniShop2.combo.Yes_no);
 
-miniShop2.window.RichText = function(config) {
-    config = config || {};
-      
-    Ext.applyIf(config,{
-        layout: 'form'
-        ,fields: [{
-            xtype: 'textarea'
-            ,name: 'rte_field'
-            ,id: 'mycmp-rte-field'
-            ,fieldLabel: 'Rich Text Field'
-        }]
-    });
-    miniShop2.window.RichText.superclass.constructor.call(this,config);
-    /*
-    this.on('activate',function() {
-        // load Rich Text Editor
-        if (typeof Tiny != 'undefined' && !this.RTEloaded) { 
-            MODx.loadRTE('mycmp-rte-field');
-            this.RTEloaded = true;
-        }
-    },this);
-    this.on('show',function() {
-            if (this.RTEloaded) {
-                tinyMCE.get('mycmp-rte-field').setContent('new content...');
-            }                 
-    },this);
-    */
-};
-Ext.extend(miniShop2.window.RichText,MODx.Window);
-Ext.reg('mycmp-window-richtext',miniShop2.window.RichText);
-
 miniShop2.plugin.pluginname = {
     getFields: function(config) {
         if (config.record['template']=='37'){//ограничение полей для Комплектов
@@ -83,7 +52,7 @@ miniShop2.plugin.pluginname = {
                 free_shaker: {xtype: 'minishop2-combo-yes-no', description: '<b></b><br />'+_('ms2_product_free_shaker_help')},
                 free_shipping: {xtype: 'minishop2-combo-yes-no', description: '<b></b><br />'+_('ms2_product_free_shipping_help')},
                 custom: {xtype: 'minishop2-combo-yes-no', description: '<b></b><br />'+_('ms2_product_custom_help')},
-                composition: {xtype: 'htmleditor', description: '<b></b><br />'+_('ms2_product_composition_help')}
+                //composition: {xtype: 'htmleditor', description: '<b></b><br />'+_('ms2_product_composition_help')}
             }
         }
         return {//поля по умолчанию для всех товаров
@@ -100,7 +69,6 @@ miniShop2.plugin.pluginname = {
             packing_unit: {xtype: 'minishop2-combo-autocomplete', description: '<b></b><br />'+_('ms2_product_packing_unit_help')},
             number_of_servings: {xtype: 'numberfield', decimalPrecision: 1, description: '<b></b><br />'+_('ms2_product_number_of_servings_help')},
             taste: {xtype: 'minishop2-combo-autocomplete', description: '<b></b><br />'+_('ms2_product_taste_help')},
-            // composition: {xtype: 'mycmp-window-richtext', description: '<b></b><br />'+_('ms2_product_composition_help')},
             recommendations: {xtype: 'minishop2-combo-autocomplete', description: '<b></b><br />'+_('ms2_product_recommendations_help')},
             analogs: {xtype: 'textfield', description: '<b></b><br />'+_('ms2_product_analogs_help')},
             gender: {xtype: 'minishop2-combo-autocomplete', description: '<b></b><br />'+_('ms2_product_gender_help')},
@@ -109,7 +77,7 @@ miniShop2.plugin.pluginname = {
             free_shaker: {xtype: 'minishop2-combo-yes-no', description: '<b></b><br />'+_('ms2_product_free_shaker_help')},
             free_shipping: {xtype: 'minishop2-combo-yes-no', description: '<b></b><br />'+_('ms2_product_free_shipping_help')},
             custom: {xtype: 'minishop2-combo-yes-no', description: '<b></b><br />'+_('ms2_product_custom_help')},
-            composition: {xtype: 'htmleditor', description: '<b></b><br />'+_('ms2_product_composition_help')}
+            //composition: {xtype: 'htmleditor', description: '<b></b><br />'+_('ms2_product_composition_help')}
         }
     }
     ,getColumns: function() {
@@ -124,10 +92,10 @@ miniShop2.plugin.pluginname = {
             packing_unit: {width:50, sortable:false, editor: {xtype:'minishop2-combo-autocomplete', name: 'packing_unit'}},
             number_of_servings: {width:50, sortable:false, editor: {xtype:'numberfield', decimalPrecision: 1, name: 'number_of_servings'}},
             taste: {width:50, sortable:false, editor: {xtype:'minishop2-combo-autocomplete', name: 'taste'}},
-            composition: {width:450, sortable:false, editor: {xtype:'tinymce', name: 'composition'}},
             recommendations: {width:50, sortable:false, editor: {xtype:'minishop2-combo-autocomplete', name: 'recommendations'}},
             custom: {width:50, sortable:false, editor: {xtype:'minishop2-combo-yes-no', name: 'custom'}},
             gender: {width:50, sortable:false, editor: {xtype:'minishop2-combo-autocomplete', name: 'gender'}},
+            //composition: {width:1000, sortable:false, editor: {xtype:'htmleditor', name: 'composition'}}
         }
     }
 };

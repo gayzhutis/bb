@@ -1,13 +1,35 @@
 var add = {
     composition: {
-        xtype: 'htmleditor',
-        fieldLabel: 'Состав'
-    },};
+        xtype: 'textarea',
+        id: 'composition-rte-field',
+        fieldLabel: 'Состав товара',
+        height: '100px'
+    },
+    /*features: {
+        xtype: 'textarea',
+        fieldLabel: 'Характеристики'
+    },
+    exposition: {
+        xtype: 'textarea',
+        fieldLabel: 'Описание'
+    },
+    device: {
+        xtype: 'textarea',
+        fieldLabel: 'Механизм'
+    },
+    compositionset: {
+        xtype: 'textarea',
+        fieldLabel: 'Состав набора'
+    },
+    technology: {
+        xtype: 'textarea',
+        fieldLabel: 'Технологии'
+    }*/
+};
 var items = [];
  
 Ext.ComponentMgr.onAvailable('minishop2-product-settings-panel', function() {
     this.on('beforerender', function() {
- 
         var listeners = {
             change: {
                 fn: MODx.fireResourceFormChange
@@ -46,7 +68,7 @@ Ext.ComponentMgr.onAvailable('minishop2-product-settings-panel', function() {
                 items.push(add[field]);
             }
         }
-        Ext.getCmp('modx-resource-composition').disable().hide();
+ 
         this.add({
             title: 'Дополнительно',
             hideMode: 'offsets',
@@ -74,4 +96,9 @@ Ext.ComponentMgr.onAvailable('minishop2-product-settings-panel', function() {
             ]
         });
     });
+});
+
+// Tiny Rich MCE initialization.
+Ext.onReady(function() {
+    MODx.loadRTE('composition-rte-field');
 });
