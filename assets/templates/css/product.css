@@ -768,6 +768,10 @@
     height: 0;
     visibility: hidden;
 }
+.product-composition-content img {
+    width: 100%!important;
+    height: auto;
+}
 
 .product-label .size-and-serving {
     font-size: 12px;

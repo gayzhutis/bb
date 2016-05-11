@@ -1,9 +1,9 @@
-# ignore cache and config
-core/cache/*
-core/config/config.inc.php
-# ignore .htaccess
-.htaccess
+# ignore files
 user_files/
 webstat/
 assets/images/
+core/cache/*
+core/config/config.inc.php
+.htaccess
 robots.txt
+config.core.php
