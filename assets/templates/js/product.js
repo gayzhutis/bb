@@ -78,7 +78,7 @@ if (gall_size == 1)  $("body").addClass("gall-one-img");
 var gallery = $('a.thumbnail').colorbox({rel:'prodgal', className:'product-gall-colorbox', width: '97%', height: '97%', opacity: 0.6, scrolling: false, returnFocus: false, fixed: true, title: function() {
     var title = $(this).data('title'),
         buy = $(".buy-btn-container").html(),
-        price = $(this).data('price'),
+        price = $(this).parents('.product-left-gallery').data('price'),
         thumbs = '';
     
     if (gall_size > 1) {
@@ -138,4 +138,10 @@ $(".ec-reviews-count a").click(function(e){
     }, 500);
     $(".reviews-question-tab-name").trigger('click');
     e.preventDefault();
+});
+
+// Нажатие на картинку в составе
+$('.product-composition-content img').live('click', function() {
+    var src = $(this).attr('src');
+    $.colorbox({href: src});
 });
