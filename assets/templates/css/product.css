@@ -769,8 +769,9 @@
     visibility: hidden;
 }
 .product-composition-content img {
-    width: 100%!important;
+    width: 100% !important;
     height: auto;
+    cursor: pointer;
 }
 
 .product-label .size-and-serving {
